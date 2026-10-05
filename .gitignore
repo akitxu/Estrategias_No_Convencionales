@@ -218,3 +218,29 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+# ==========================================
+# PERSONALIZADO: Estrategias No Convencionales
+# ==========================================
+
+# Ignorar carpetas de datos pesados y caché local
+datos/
+data/
+*.csv
+*.xlsx
+!datos/.gitkeep        # (Opcional: permite subir la carpeta vacía si usas este truco)
+
+# Ignorar resultados generados automáticamente
+outputs/
+logs/
+*.png
+*.pdf
+
+# Entornos virtuales de Python (por si los creas localmente)
+venv/
+env/
+.venv/
+.env
+
+# Archivos de sistema operativo
+.DS_Store
+Thumbs.db
