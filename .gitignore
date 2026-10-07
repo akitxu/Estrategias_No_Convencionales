@@ -247,3 +247,6 @@ Thumbs.db
 
 # JupyterLab
 .virtual_documents/
+
+# JupyterLab
+.virtual_documents/
