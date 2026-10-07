@@ -244,3 +244,6 @@ env/
 # Archivos de sistema operativo
 .DS_Store
 Thumbs.db
+
+# JupyterLab
+.virtual_documents/
