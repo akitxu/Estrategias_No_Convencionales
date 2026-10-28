@@ -2,22 +2,22 @@
 
     "Las estrategias cambian, pero el motor que las evalúa debe seguir siendo el mismo. Solo así podemos comparar manzanas con manzanas."
 
-Antes de entrar a analizar las estrategias no convencionales de este libro (contrarian investing, pairs trading, Fibonacci moving averages, tail risk hedging, etc.), es fundamental entender cómo vamos a evaluarlas. En el primer libro construimos un "motor común" para las estrategias ortodoxas. En este segundo libro, ese motor se amplía con cinco nuevos departamentos especializados para abordar la complejidad de las estrategias no convencionales, sin perder la coherencia del sistema original.
+Antes de entrar a analizar las estrategias no convencionales de este Blog (contrarian investing, pairs trading, Fibonacci moving averages, tail risk hedging, etc.), es fundamental entender cómo vamos a evaluarlas. En el primer Blog construimos un "motor común" para las estrategias ortodoxas. En este segundo Blog, ese motor se amplía con cinco nuevos departamentos especializados para abordar la complejidad de las estrategias no convencionales, sin perder la coherencia del sistema original.
 
-Para entenderlo sin necesidad de saber programar, retomemos la metáfora del primer libro: imagina una fábrica moderna. Tú (el inversor) eres el director de la fábrica. Tú decides qué producto se va a fabricar (la estrategia de inversión). Sin embargo, no tienes que ir a la máquina de tornillos, ni a la de pintura, ni a la de empaquetado; simplemente le das a un botón y la cadena de montaje hace el resto.
+Para entenderlo sin necesidad de saber programar, retomemos la metáfora del primer Blog: imagina una fábrica moderna. Tú (el inversor) eres el director de la fábrica. Tú decides qué producto se va a fabricar (la estrategia de inversión). Sin embargo, no tienes que ir a la máquina de tornillos, ni a la de pintura, ni a la de empaquetado; simplemente le das a un botón y la cadena de montaje hace el resto.
 
-En el primer libro, la cadena de montaje tenía cinco departamentos. En este segundo libro, la fábrica crece: añadimos cinco nuevos departamentos especializados que trabajan en equipo con los originales. Este es el organigrama completo.
+En el primer Blog, la cadena de montaje tenía cinco departamentos. En este segundo Blog, la fábrica crece: añadimos cinco nuevos departamentos especializados que trabajan en equipo con los originales. Este es el organigrama completo.
 
 ## Los 5 departamentos originales (reutilizados)
 
-Estos son los mismos que ya conoces del primer libro. Los mencionamos brevemente para que el lector nuevo entienda el contexto, y para que el lector veterano recuerde la base sobre la que se construye todo lo demás.
+Estos son los mismos que ya conoces del primer Blog. Los mencionamos brevemente para que el lector nuevo entienda el contexto, y para que el lector veterano recuerde la base sobre la que se construye todo lo demás.
 
 ### 1. El Archivista: Gestor de Datos
 Todo análisis comienza con datos fiables. Este departamento se encarga de conectarse a las fuentes financieras (Yahoo Finance, FRED, CBOE), descargar el historial de precios de los activos, limpiarlos de errores y guardarlos de forma ordenada. Es el cimiento sobre el que se construye todo lo demás.
 
 ## 2. El Estratega: Optimizador de Carteras
 
-El cerebro matemático. Una vez que sabemos qué activos queremos en nuestra cartera, este departamento calcula cómo repartir el dinero. En el primer libro hacía asignaciones estáticas, paridad de riesgo o mínima varianza. En este segundo libro, además, es capaz de ejecutar asignaciones dinámicas basadas en señales (miedo/codicia, cointegración, fractales, regímenes de volatilidad).
+El cerebro matemático. Una vez que sabemos qué activos queremos en nuestra cartera, este departamento calcula cómo repartir el dinero. En el primer Blog hacía asignaciones estáticas, paridad de riesgo o mínima varianza. En este segundo Blog, además, es capaz de ejecutar asignaciones dinámicas basadas en señales (miedo/codicia, cointegración, fractales, regímenes de volatilidad).
 
 ## 3. La Máquina del Tiempo: Motor de Backtest
 
@@ -25,19 +25,19 @@ Aquí ocurre la verdadera magia. Un backtest es una simulación histórica: este
 
 ## 4. El Auditor: Calculador de Métricas
 
-Tener una línea temporal no es suficiente. El Auditor calcula indicadores estandarizados de riesgo y rentabilidad: Rentabilidad Anualizada (CAGR), Volatilidad, Máximo Drawdown, Ratio Sharpe, Sortino, Calmar, VaR y CVaR. En este segundo libro, el Auditor se amplía con métricas específicas para estrategias no convencionales: win-rate, profit factor, Information Ratio, ratio de cobertura del hedge, coste anual del seguro de cola.
+Tener una línea temporal no es suficiente. El Auditor calcula indicadores estandarizados de riesgo y rentabilidad: Rentabilidad Anualizada (CAGR), Volatilidad, Máximo Drawdown, Ratio Sharpe, Sortino, Calmar, VaR y CVaR. En este segundo Blog, el Auditor se amplía con métricas específicas para estrategias no convencionales: win-rate, profit factor, Information Ratio, ratio de cobertura del hedge, coste anual del seguro de cola.
 
 ## 5. El Editor: Generador de Informes
 
-Toma los números del Auditor y los traduce a un lenguaje visual y comprensible. Genera gráficos de evolución, tablas de comparación y el diagnóstico final. En este segundo libro, el Editor añade dashboards específicos: semáforos de viabilidad, rankings de activos contrarian, mapas de calor de cointegración y reportes de señales de indicadores no convencionales.
+Toma los números del Auditor y los traduce a un lenguaje visual y comprensible. Genera gráficos de evolución, tablas de comparación y el diagnóstico final. En este segundo Blog, el Editor añade dashboards específicos: semáforos de viabilidad, rankings de activos contrarian, mapas de calor de cointegración y reportes de señales de indicadores no convencionales.
 
-## Los 5 nuevos departamentos (exclusivos de este libro)
+## Los 5 nuevos departamentos (exclusivos de este Blog)
 
 Las estrategias no convencionales requieren herramientas que el motor original no tenía. Estos cinco nuevos departamentos se añaden a la fábrica para abordar la nueva complejidad.
 
 ### 6. El Termómetro: Gestor de Señales Binarias (Miedo/Codicia)
 
-Muchas estrategias de este libro (Fear & Greed Index, Contrarian Investing, Tail Risk Hedging) necesitan saber en qué estado emocional está el mercado. Este departamento construye índices propietarios de sentimiento agregando múltiples señales normalizadas:
+Muchas estrategias de este Blog (Fear & Greed Index, Contrarian Investing, Tail Risk Hedging) necesitan saber en qué estado emocional está el mercado. Este departamento construye índices propietarios de sentimiento agregando múltiples señales normalizadas:
 
 * VIX (volatilidad implícita)
 * Put/Call ratio de CBOE
@@ -78,7 +78,7 @@ Estrategias como Tail Risk Hedging, Volatility Arbitrage o Butterfly Spreads req
 
 ### 10. El Observatorio: Biblioteca de Indicadores No Convencionales
 
-El Bloque VIII del libro introduce diez indicadores técnicos no convencionales que no aparecen en el primer libro. El Observatorio los implementa todos como funciones modulares reutilizables:
+El Bloque VIII del Blog introduce diez indicadores técnicos no convencionales que no aparecen en el primer Blog. El Observatorio los implementa todos como funciones modulares reutilizables:
 
 Markdown
 | Indicador | Función en el motor |
@@ -98,7 +98,7 @@ El Observatorio no usa estos indicadores como señales únicas de entrada (eso s
 
 ## La gran novedad: el semáforo de viabilidad
 
-El primer libro evaluaba todas las estrategias con las mismas reglas. El segundo libro introduce una capa adicional de honestidad: el semáforo de viabilidad. Antes de ejecutar cualquier estrategia, el motor te dice qué puede y qué no puede hacer con ella.
+El primer Blog evaluaba todas las estrategias con las mismas reglas. El segundo Blog introduce una capa adicional de honestidad: el semáforo de viabilidad. Antes de ejecutar cualquier estrategia, el motor te dice qué puede y qué no puede hacer con ella.
 
 ### ¿Qué evalúa el semáforo?
 
@@ -117,7 +117,7 @@ Los tres colores
     🟡 Ámbar: backtesteable parcialmente, o requiere datos/infraestructura adicional que el motor provee mediante proxies.
     🔴 Rojo: solo documentable; el motor explica la mecánica pero no simula P&L histórico completo.
 
-Ejemplos de semáforo en este libro
+Ejemplos de semáforo en este Blog
 
 | Capítulo | Estrategia | Semáforo | Motivo |
 |-----------|------------|:---------:|---------|
@@ -158,7 +158,7 @@ Los departamentos entre corchetes [...] son los nuevos módulos que solo se acti
 
 ## Detrás del telón: la robustez de los datos (ampliada)
 
-En el mundo cuantitativo, "basura entra, basura sale". El pipeline de depuración automática del primer libro se mantiene y se amplía con nuevas validaciones:
+En el mundo cuantitativo, "basura entra, basura sale". El pipeline de depuración automática del primer Blog se mantiene y se amplía con nuevas validaciones:
 
 Detección de huecos temporales en series de Yahoo Finance.
 Normalización de formatos al importar extractos bancarios o datos de FRED.
@@ -179,10 +179,10 @@ El flujo de trabajo recomendado para cada capítulo es:
     Consulta el dashboard de indicadores (Bloque VIII): para estrategias basadas en indicadores no convencionales, el motor genera un ranking semanal de los activos más "contrarian" del momento.
 
 En resumen
-Este segundo libro no reemplaza al primero: lo amplía. El motor común se convierte en un ecosistema modular capaz de evaluar desde la clásica 60/40 hasta el tail risk hedging con opciones de cola, pasando por pairs trading cointegrado y estrategias contrarian basadas en Fibonacci moving averages.
+Este segundo Blog no reemplaza al primero: lo amplía. El motor común se convierte en un ecosistema modular capaz de evaluar desde la clásica 60/40 hasta el tail risk hedging con opciones de cola, pasando por pairs trading cointegrado y estrategias contrarian basadas en Fibonacci moving averages.
 La filosofía sigue siendo la misma: no predecir el futuro, sino prepararse matemáticamente para él. Pero ahora, con herramientas que reconocen que el mercado no siempre es racional, que las correlaciones no siempre son estables, y que a veces la mejor defensa es salirse del guion ortodoxo con reglas frías y cuantitativas.
-Con esta arquitectura común funcionando de fondo —ampliada con los cinco nuevos departamentos y el semáforo de viabilidad—, podemos dedicar el resto del libro a lo que realmente importa: entender la lógica de cada estrategia no convencional y decidir cuál se adapta mejor a nuestros objetivos, siempre con los ojos abiertos sobre lo que el motor puede y no puede simular.
+Con esta arquitectura común funcionando de fondo —ampliada con los cinco nuevos departamentos y el semáforo de viabilidad—, podemos dedicar el resto del Blog a lo que realmente importa: entender la lógica de cada estrategia no convencional y decidir cuál se adapta mejor a nuestros objetivos, siempre con los ojos abiertos sobre lo que el motor puede y no puede simular.
 Aviso legal
-Las herramientas, códigos y simulaciones presentadas en este capítulo y en todo el libro tienen fines exclusivamente educativos y de investigación cuantitativa. No constituyen asesoramiento financiero ni recomendación de inversión. El rendimiento pasado no garantiza resultados futuros.
-Advertencia específica para este segundo libro: muchas de las estrategias aquí presentadas son de alto riesgo, requieren capital elevado, conocimientos avanzados o infraestructura profesional. Algunas operan con apalancamiento, derivados o activos ilíquidos. El lector debe entender que las pérdidas pueden superar el capital invertido en ciertos escenarios. Consulta siempre con un asesor financiero cualificado antes de ejecutar cualquier estrategia real, y nunca inviertas dinero que no puedas permitirte perder.
+Las herramientas, códigos y simulaciones presentadas en este capítulo y en todo el Blog tienen fines exclusivamente educativos y de investigación cuantitativa. No constituyen asesoramiento financiero ni recomendación de inversión. El rendimiento pasado no garantiza resultados futuros.
+Advertencia específica para este segundo Blog: muchas de las estrategias aquí presentadas son de alto riesgo, requieren capital elevado, conocimientos avanzados o infraestructura profesional. Algunas operan con apalancamiento, derivados o activos ilíquidos. El lector debe entender que las pérdidas pueden superar el capital invertido en ciertos escenarios. Consulta siempre con un asesor financiero cualificado antes de ejecutar cualquier estrategia real, y nunca inviertas dinero que no puedas permitirte perder.
 El semáforo de viabilidad es una guía, no una garantía. Que el motor pueda simular una estrategia no significa que sea adecuada para tu perfil de riesgo, tu horizonte temporal o tu situación fiscal.

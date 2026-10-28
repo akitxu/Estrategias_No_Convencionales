@@ -1,9 +1,9 @@
-Índice del Libro: Estrategias No Convencionales de Inversión Cuantitativa
+# Índice del Libro: Estrategias No Convencionales de Inversión Cuantitativa
 
-Prefacio — Cuando la ortodoxia no basta
+## Prefacio — Cuando la ortodoxia no basta
 Por qué este libro existe, para quién está escrito y cuándo tiene sentido salirse del guion. El inversor conservador no busca adrenalina, busca herramientas adicionales para blindar su patrimonio, capturar ineficiencias o cubrir riesgos que las estrategias clásicas (60/40, All Weather, Bogleheads) no pueden gestionar. Advertencia de honestidad intelectual: muchas de estas estrategias son de alto riesgo, requieren capital elevado o infraestructura profesional. Las marcaremos con un semáforo de viabilidad en el motor cuantitativo.
 
-Capítulo 1 — Arquitectura Común: el motor invisible (reutilizado)
+## Capítulo 1 — Arquitectura Común: el motor invisible (reutilizado)
 Sistema de backtest, limpieza de datos y diagnóstico de riesgo extendido con nuevos módulos: gestor de señales binarias, calculador de cointegración, tracker de eventos y simulador de opciones.
 
 Objetivos:
@@ -13,10 +13,10 @@ Objetivos:
 
 Semáforo: 🟢 Totalmente backtesteable.
 
-BLOQUE I · Comportamiento y Psicología de Masas
+## BLOQUE I · Comportamiento y Psicología de Masas
 El mercado no es racional: es humano. Aquí explotamos los sesgos cognitivos colectivos (pánico, euforia, anclaje) con reglas cuantitativas que sustituyen a la intuición.
 
-Capítulo 2 — Contrarian Investing: comprar cuando nadie quiere
+### Capítulo 2 — Contrarian Investing: comprar cuando nadie quiere
 Estrategia de reversión a la media aplicada a los 5 ETFs con peor rendimiento a 12 meses, filtrados por distancia al máximo histórico y RSI.
 
 Objetivos:
@@ -27,7 +27,7 @@ Objetivos:
 
 Semáforo: 🟢 Totalmente backtesteable.
 
-Capítulo 2b — Contrarian Investing: comprar cuando nadie quiere
+### Capítulo 2b — Contrarian Investing: comprar cuando nadie quiere
 Estrategia de reversión a la media aplicada a los 5 ETFs con peor rendimiento a 12 meses, filtrados por distancia al máximo histórico y RSI.
 
 Objetivos:
@@ -38,7 +38,7 @@ Objetivos:
 
 Semáforo: 🟢 Totalmente backtesteable.
 
-Capítulo 3 — Momentum Crash: apostar contra la euforia
+### Capítulo 3 — Momentum Crash: apostar contra la euforia
 Sistema de rotación a cash cuando el momentum a 3 meses del SPY supera +20% sin corrección intermedia del 5%.
 
 Objetivos:
@@ -49,7 +49,7 @@ Objetivos:
 
 Semáforo:  Totalmente backtesteable.
 
-Capítulo 4 — Fear & Greed Index como temporizador táctico
+### Capítulo 4 — Fear & Greed Index como temporizador táctico
 Índice propietario de sentimiento que agrega 5 señales normalizadas para desplegar o reducir exposición a RV global.
 
 Objetivos:
@@ -63,7 +63,7 @@ Semáforo: 🟢 Totalmente backtesteable (con proxies de Yahoo Finance).
 BLOQUE II · Cuantitativas y Arbitraje Estadístico
 Aquí dejamos de mirar al mercado como un todo y empezamos a mirar las relaciones matemáticas entre activos. El objetivo: rentabilidad descorrelada del mercado (alpha puro).
 
-Capítulo 5 — Pairs Trading: la danza de los correlacionados
+### Capítulo 5 — Pairs Trading: la danza de los correlacionados
 Estrategia de mean reversion sobre spreads logarítmicos entre pares clásicos, validada con test de Engle-Granger.
 
 Objetivos:
@@ -74,7 +74,7 @@ Objetivos:
 
 Semáforo: 🟢 Totalmente backtesteable.
 
-Capítulo 6 — Statistical Arbitrage: ETFs vs. sus subyacentes
+### Capítulo 6 — Statistical Arbitrage: ETFs vs. sus subyacentes
 Estrategia de convergencia entre ETF y su subyacente cuando el descuento/premium supera 2 desviaciones estándar.
 
 Objetivos:
